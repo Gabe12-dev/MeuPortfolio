@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
+    <!-- FIM GOOGLE FONTS -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- FIM Bootstrap Icons -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Meu Portifólio</title>
+</head>
+<body>
+    <header>
+
+        <div class="interface">
+            <nav class="menu-desktop">
+                <ul>
+                   <li><a href="#topo">Início</a></li>
+                   <li><a href="#sobre">Sobre mim</a></li>
+                   <li><a href="#projetos">Projetos</a></li>    
+                    <li><a href="#formulario">Fale comigo</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="topo">
+            <div class="interface-topo">
+                <div class="flex">
+                    <div class="texto-topo-site">
+                        <h1>💻 🧠 Aprendendo hoje o que vai mudar o <span>amanhã</span>.</h1>
+                        <p>Estudante de Análise e Desenvolvimento de Sistemas. Minha principal competência é o aprendizado rápido e a aplicação da lógica para resolução de problemas. Pronto para evoluir e consolidar meu nome no mercado.</p>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="C:/AmbienteJava/Projects/Pessoais/MeuPortfolio/images/IMG_20251103_105827.png" alt="Imagem de um desenvolvedor">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <h2 class="titulo">Sobre <span>mim</span>.</h2>
+                <div class="flex">
+                    <div class="texto-sobre-mim">
+                        <h2>Muito prazer! Meu nome é Gabriel Batista</h2>
+                        <h3>mas pode me chamar de <span>Gabe</span>.</h3>
+                        <p><br>
+                            Sou estudante de Análise e Desenvolvimento de Sistemas e desde cedo tenho uma grande paixão por tecnologia. Sempre fui curioso em entender como as coisas funcionam por trás das telas, e isso acabou me guiando naturalmente para o mundo da programação.
+                            Atualmente, estou focado em aprimorar minhas habilidades em desenvolvimento de software, explorando linguagens como Java e JavaScript, e aprendendo mais sobre frameworks como Spring Boot e React.<br> Gosto do desafio de transformar ideias em código e resolver problemas que fazem diferença no dia a dia das pessoas.
+                            <br>Participei de programas como o Bootcamp Riachuelo – Primeiros Passos com Java e o <br>PcD Tech Bradesco – Java & QA Developer, <br>onde pude aplicar na prática o que aprendi e entender melhor o ambiente de desenvolvimento ágil. <br>
+                            Sou movido por aprendizado constante e acredito que crescer profissionalmente vai muito além de dominar uma linguagem... <br>envolve colaboração, troca de conhecimento e vontade de evoluir sempre.<br>
+                            Sigo construindo meu caminho na tecnologia com o objetivo de criar soluções inovadoras, contribuir com bons times e, claro, continuar aprendendo um pouco mais a cada linha de código. 🚀
+                        </p>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/gabe12-dev"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/Gabe12-dev"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.instagram.com/gabexx_12"><button><i class="bi bi-instagram"></i></button></a>
+                        </div>
+                        <div class="btn-contato">
+                             <a href="assets/curriculo-gabriel.pdf" download>
+                                  <button>Meu Currículo</button>
+                             </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">Meus <span>Projetos</span>.</h2>
+                <div class="flex">
+                   <a href="https://github.com/Gabe12-dev/wireframe-pessoa" target="_blank">
+                        <div class="projetos-box">
+                            <i class="bi bi-person-vcard"></i>
+                             <h3>WireFrame Pessoa</h3>
+                            <p>
+                                Projeto de um WireFrame para gerenciamento de pessoas utilizando:<br>
+                                Java, Spring Boot, Thymeleaf, HTML e CSS.
+                            </p>
+                         </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+       <section class="formulario" id="formulario">
+    <div class="interface">
+        <h2 class="titulo">FALE <span>COMIGO</span>.</h2>
+
+        <form id="formContato">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+
+    </main>
+    <footer>
+        <div class="interface">
+            <p>© 2025 Gabriel Batista. Todos os direitos reservados.<br><hr><i class="bi bi-envelope-fill"></i> <a href="mailto:baristagabriel9@gmail.com">baristagabriel9@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT PARA ENVIO DO FORMULÁRIO DE CONTATO -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    // Inicializa o EmailJS
+    emailjs.init("MtlaoKaq2wlOh-xNo");
+
+    document.getElementById("formContato").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita reload
+
+        var params = {
+            nome: document.querySelector("input[name='nome']").value,
+            email: document.querySelector("input[name='email']").value,
+            mensagem: document.querySelector("textarea[name='mensagem']").value
+        };
+
+        const serviceID = "service_zz9lou7";
+        const templateID = "template_9pjgt5n";
+
+        emailjs.send(serviceID, templateID, params)
+        .then(() => {
+            alert("Mensagem enviada com sucesso! ✨");
+        })
+        .catch((err) => {
+            console.log(err);
+            alert("Erro ao enviar mensagem.");
+        });
+    });
+    </script>
+</body>
+</html>
