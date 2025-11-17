@@ -1,5 +1,8 @@
-/* ESTILO GERAL */
-*{
+/* =============================
+   ESTILO GERAL
+============================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,478 +11,334 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #000000;
-    height: 100vh;
-}
-h2.titulo {
-    font-size: 40px;
     color: #ffffff;
-    text-align: left;
-    margin-bottom: 40px;
-}
-h2.titulo span{
-    font-size: 40px;
-    color: #ffd900;
 }
 
-.interface{
-    max-width: 1400px;
+/* Container principal */
+.interface {
+    max-width: 1300px;
     margin: 0 auto;
-}
-.interface .menu-desktop{
-    padding: 50px 0;
+    padding: 0 4%;
 }
 
-.btn-contato button{
-    padding: 10px 40px;
-    font-size: 26px;
-    font-weight: 600;
-    color: #000000e0;
-    background-color: #e5ff00;
-    border: 1px solid #000;
-    border-radius: 25px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-button:hover {
-    box-shadow: 0 0 8px #9bac06;
-    color: #000000;
-    background-color:#e5ff00; 
-    transform: scale(1.05);
-}
-.flex{
+.flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-}
-/* ESTILO DO CABEÇALHO */
-header{
-    background-color: #000000;
-    padding: 15px 4%;
-}
-
-.logo img {
-  width: 40%; /* ocupa 30% da largura do contêiner */
-  max-width: 500px; /* limita pra não ficar gigante */
-  height: auto;
-} 
-
-header > .interface{
-    display: flex;
-      flex-direction: column;/* Coloca a logo em cima e o menu embaixo */
-  align-items: center;    /* Centraliza tudo no meio da tela */
-  text-align: center;  gap: 20px; /* Espaçamento entre logo e menu */
-    margin-bottom: 90px; /*espaçamento entre menu e o main*/
-    justify-content: space-between; 
-    align-items: left;
-}
-
-header .menu-desktop a {
-    color: #969696e0;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.5s;
-}
-
-header .menu-desktop a:hover {
-    color: #ffffff;
-    transform: scale(1.05);
-}
-
-header nav ul{
-    list-style: none;
-    display: flex;
+    justify-content: space-between;
     gap: 30px;
 }
 
-header nav ul li {
+h2.titulo {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+h2.titulo span {
+    color: #ffd900;
+}
+
+/* =============================
+   CABEÇALHO
+============================= */
+
+header {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+header .interface {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+/* MENU DESKTOP */
+.menu-desktop ul {
+    /* abaixar um pouco do topo */
+    margin-top: 100px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+}
+
+.menu-desktop a {
     text-decoration: none;
-    font-weight: 700;
-    font-size: 30px;
-    transition: color 0.3s;
+    font-size: 40px;
+    font-weight: 400;
+    color: #bababa;
+    transition: .3s;
+}
+.menu-desktop a {
+    transition: color .4s ease, transform .4s ease;
 }
 
-
-
-.btn-contato button:hover {
-    box-shadow: 0 0 8px #9bac06;
-    color: #000000;
-    background-color:#e5ff00; 
-    transform: scale(1.05);
-}
-
-main {
-    text-align: left;
-    margin-top: 15px;
-    font-size: 20px;
+.menu-desktop a:hover {
     color: #ffffff;
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 6px #ffffff60);
 }
 
-/* ESTILO DO TOPO DO SITE */
+
+/* =============================
+   SEÇÃO TOPO DO SITE
+============================= */
+
 section.topo-do-site {
-    padding: 70px 4%;
+    padding: 60px 0;
 }
 
-section.topo-do-site .flex {
-    align-items: center;
+.topo-do-site .flex {
     justify-content: center;
-    gap: 110px;
+    gap: 80px;
 }
 
 .topo-do-site h1 {
-    font-size: 42px;
-    line-height: 100px;
+    font-size: 45px;
+    line-height: 58px;
 }
 
-
-.topo-do-site .texto-topo-site h1 span{
+.topo-do-site h1 span {
     color: #ffd900;
-    line-height: 120px;
     font-size: 60px;
 }
 
-.topo-do-site .texto-topo-site p{
-    font-size: 24px;
-    color: #ffffff;
-    margin: 20px 0%;
-    padding: 20px 4%;
+.topo-do-site p {
+    font-size: 22px;
+    margin-top: 20px;
 }
 
-section.topo-do-site .img-topo-site img{
-    width: 400px;
-    height: auto;
+.img-topo-site img {
+    /* tirar do lado da borda da direita*/
+    margin-right: 40px;
+    margin-top: 70px;
+    max-width: 300px;
     border-radius: 20px;
-    border: 1px solid #fffb04;
-    box-shadow: 0 0 8px #fffb0480;
+    border: 1px solid #ffd900;
+    box-shadow: 0 0 8px #fff87d80;
 }
- .topo-do-site .img-topo-site {
-    position: relative;
+
+.img-topo-site {
     animation: flutuar 1.5s ease-in-out infinite alternate;
 }
 
+.topo-do-site .texto-topo-site {
+    /*deixar um pouco mais pra baixo*/
+    margin-top: 40px;
+    padding: 0 120px;
+}
 @keyframes flutuar {
-    0% {
-        top: 0;
-    }
-    100% {
-        top: 20px;
-    }
-}
-/* ESTILO DA SEÇÃO DE PROJETOS */
-section.projetos {
-    padding: 40px 4%;
-}
-section.projetos .flex {
-    gap: 60px;
-}
-.projetos .projetos-box {
-    padding: 40px;
-    color: #ffffff;
-    border: 2px solid #dad603a2;
-    margin-top: 45px;
-    transition: 1.2s;
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
 }
 
-.projetos .projetos-box i {
+/* =============================
+   SEÇÃO SOBRE
+============================= */
+
+section.sobre {
+    padding: 80px 0;
+}
+
+.sobre .flex {
+    gap: 40px;
+}
+
+.texto-sobre-mim h2 {
+    font-size: 36px;
+}
+
+.texto-sobre-mim h3 {
+    font-size: 28px;
+}
+
+.texto-sobre-mim p {
+    margin-top: 25px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.texto-sobre-mim span {
+    color: #ffd900;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background: #e5ff00;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-social button:hover {
+    transform: scale(1.1);
+}
+
+.btn-contato button {
+    padding: 12px 40px;
+    font-size: 22px;
+    background: #e5ff00;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+    transition: .3s;
+}
+.btn-contato button:hover {
+    transform: scale(1.05);
+}
+
+/* =============================
+   SEÇÃO PROJETOS
+============================= */
+
+section.projetos {
+    padding: 80px 0;
+}
+
+.projetos .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.projetos-box {
+    width: 100%;
+    max-width: 330px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #ffd900a8;
+    text-align: center;
+    transition: .4s;
+}
+
+.projetos-box i {
     font-size: 70px;
     color: #ffd900;
 }
-.projetos .projetos-box h3 {
-    font-size: 28px;
-    color: #ffffff;
-    margin-bottom: 15px 0px;
-}
-.projetos .projetos-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #c8ff008c;
-}
-/* ESTILO DA SEÇÃO SOBRE MIM */
-section.sobre {
-    padding: 80px 4%;
-}
-section.sobre .flex {
-    align-items: center;
-    gap: 60px;
-}
-.interface .texto-sobre-mim {
-    color: #ffffff;
 
-}
-.interface .flex .texto-sobre-mim p {
+.projetos-box h3 {
     margin: 20px 0;
-    text-align: justify;
-}
-.interface .flex .texto-sobre-mim h2 {
-    font-size: 36px;
-}
-.interface .flex .texto-sobre-mim h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-.texto-sobre-mim h3 span {
-    font-size: 36px;
-    color: #ffd900;
-}
-section.sobre .interface .titulo {
-    margin-bottom: 70px;
-}
-.texto-sobre-mim .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 40px;
-    border : none;
-    background-color: #e5ff00;
-    font-size: 23px;
-    cursor: pointer;
-    margin-right: 15px;
-    transition: 0.3s;
-}
-.texto-sobre-mim .btn-contato{
-    margin-top: 30px;
 }
 
-/* ESTILO DO FORMULÁRIO DE CONTATO */
-section.formulario {
-    padding: 300px 4%;
+.projetos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff87d80;
 }
-form{
-    max-width: 800px;
+
+/* =============================
+   SEÇÃO FORMULÁRIO (FALE COMIGO)
+============================= */
+
+section.formulario {
+    padding: 120px 0;
+}
+
+form {
+    max-width: 700px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
-.interface h2.titulo {
-    margin-bottom: 20px;
-    padding: 60px 5%;
-    text-align: center;
-}
-
-button[type="submit"]{
-    width: 150px;
-    height: 60px;
-    background-color: #e5ff00;
-    color: #000000e0;
-    font-size: 21px;
-    font-weight: bold;
-    border: none;
-    align-self: center;
-    margin-top: 20px;
-    border-radius: 6px;
-    transition: 0.3s;
-    cursor: pointer;
-    font-family: poppins, sans-serif;
-}
-
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
-    background-color: #cac7c723;
+    background: #cac7c723;
     border: none;
     outline: none;
-    padding: 12px 12px;
-    color: #ffffff;
+    padding: 14px;
     border-radius: 10px;
+    color: white;
     font-size: 16px;
-    font-family: poppins, sans-serif;
 }
-form textarea {
-    resize: none;
-    min-height: 150px;
+
+button[type="submit"] {
+    background: #e5ff00;
+    color: #000;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s;
 }
-/* ESTILO DO RODAPÉ */
+button[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+/* =============================
+   RODAPÉ
+============================= */
 
 footer {
-    background-color: #000000;
-    color: #ffffff;
     text-align: center;
-    padding: 20px 4%;
-    font-size: 16px;
+    padding: 30px 0;
+    background: #000;
+    color: white;
 }
-footer p {
-    margin: 0;
-}
-footer hr {
-    border: 0;
-    height: 1px;
-    background-color: #ffffff;
-    margin: 10px 0;
-}
+
 footer a {
-    color: #ffffff;
-}
-    
-@media screen and (max-width: 768px) {
-    footer {
-        font-size: 14px;
-    }
+    color: #ffd900;
+    text-decoration: none;
 }
 
-/*RESPONSIVIDADE*/
+/* =============================
+   RESPONSIVIDADE
+============================= */
 
-/* ============================================
-   RESPONSIVIDADE GERAL — MOBILE (até 768px)
-=============================================== */
-@media screen and (max-width: 768px) {
-
-    /* Layout geral */
+/* ===== Tablets ===== */
+@media (max-width: 900px) {
     .flex {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
     }
 
-    /* Cabeçalho */
-    header > .interface {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        margin-bottom: 40px;
+    header .interface {
+        gap: 15px;
     }
 
-    .logo img {
-        width: 70%;
-        max-width: 300px;
-    }
-
-    header nav ul {
+    .menu-desktop ul {
         flex-direction: column;
         gap: 20px;
-    }
-
-    header nav ul li {
-        font-size: 22px;
-    }
-
-    /* Topo do site */
-    section.topo-do-site {
-        padding: 40px 4%;
-    }
-
-    .topo-do-site .texto-topo-site h1 {
-        font-size: 28px;
-        line-height: 40px;
-    }
-
-    .topo-do-site .texto-topo-site h1 span {
-        font-size: 34px;
-        line-height: 40px;
-    }
-
-    .topo-do-site .texto-topo-site p {
-        font-size: 18px;
-        padding: 0;
-    }
-
-    .topo-do-site .img-topo-site img {
-        width: 250px;
-    }
-
-    /* Projetos */
-    section.projetos .flex {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .projetos .projetos-box {
-        padding: 25px;
-    }
-
-    .projetos .projetos-box h3 {
-        font-size: 24px;
-    }
-
-    /* Sobre mim */
-    section.sobre .flex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .texto-sobre-mim h2 {
-        font-size: 28px;
-    }
-
-    .texto-sobre-mim h3 {
-        font-size: 22px;
-    }
-
-    .texto-sobre-mim p {
-        font-size: 18px;
-    }
-
-    /* Formulário */
-    section.formulario {
-        padding: 120px 4%;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    button[type="submit"] {
-        width: 100%;
-        max-width: 200px;
-        height: 45px;
-        font-size: 18px;
-    }
-
-    /* Rodapé */
-    footer {
-        font-size: 14px;
     }
 }
 
-/* ============================================
-   RESPONSIVIDADE — TELAS MUITO PEQUENAS (até 480px)
-=============================================== */
-@media screen and (max-width: 480px) {
+/* ===== Celulares ===== */
+@media (max-width: 600px) {
 
     h2.titulo {
         font-size: 30px;
         text-align: center;
     }
 
+    .topo-do-site h1 {
+        font-size: 28px;
+    }
+    .topo-do-site h1 span {
+        font-size: 32px;
+    }
+
+    .img-topo-site img {
+        max-width: 230px;
+    }
+
+    .projetos-box {
+        max-width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
     .btn-contato button {
-        font-size: 20px;
-        padding: 8px 30px;
-    }
-
-    .topo-do-site .img-topo-site img {
-        width: 200px;
-    }
-
-    .projetos .projetos-box i {
-        font-size: 50px;
-    }
-
-    .projetos .projetos-box h3 {
-        font-size: 20px;
-    }
-
-    form input, form textarea {
-        font-size: 14px;
+        width: 100%;
     }
 }
-
-/* navgação por âncoras */
- html {
-            scroll-behavior: smooth;
-        }
-        nav {
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            height: 100vh; /* só para exemplo */
-            padding: 40px;
-        }
