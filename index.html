@@ -13,9 +13,26 @@
     <!-- FIM Bootstrap Icons -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Meu Portifólio</title>
+    <!-- Ícone na aba do navegador -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
 <body>
-    <header>
+
+    <div id="particles-js"></div>
+
+        <header>
+            <div class="menu-hamburguer">
+                <button id="btn-menu">&#9776;</button>
+            </div>
+
+
+            <nav class="menu-lateral" id="menu-lateral">
+                <a href="#topo">Início</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#formulario">Fale comigo</a>
+            </nav>
 
         <div class="interface">
             <nav class="menu-desktop">
@@ -52,11 +69,15 @@
                         <h2>Muito prazer! Meu nome é Gabriel Batista</h2>
                         <h3>mas pode me chamar de <span>Gabe</span>.</h3>
                         <p><br>
-                            Sou estudante de Análise e Desenvolvimento de Sistemas e desde cedo tenho uma grande paixão por tecnologia. Sempre fui curioso em entender como as coisas funcionam por trás das telas, e isso acabou me guiando naturalmente para o mundo da programação.
-                            Atualmente, estou focado em aprimorar minhas habilidades em desenvolvimento de software, explorando linguagens como Java e JavaScript, e aprendendo mais sobre frameworks como Spring Boot e React.<br> Gosto do desafio de transformar ideias em código e resolver problemas que fazem diferença no dia a dia das pessoas.
-                            <br>Participei de programas como o Bootcamp Riachuelo – Primeiros Passos com Java e o <br>PcD Tech Bradesco – Java & QA Developer, <br>onde pude aplicar na prática o que aprendi e entender melhor o ambiente de desenvolvimento ágil. <br>
-                            Sou movido por aprendizado constante e acredito que crescer profissionalmente vai muito além de dominar uma linguagem... <br>envolve colaboração, troca de conhecimento e vontade de evoluir sempre.<br>
-                            Sigo construindo meu caminho na tecnologia com o objetivo de criar soluções inovadoras, contribuir com bons times e, claro, continuar aprendendo um pouco mais a cada linha de código. 🚀
+                            Sou estudante de Análise e Desenvolvimento de Sistemas.<br>
+                            Tenho interesse em entender como as coisas funcionam no código e estou sempre buscando aprender mais.<br><br>
+
+                            Trabalho principalmente com Java, Spring Boot, JavaScript, HTML, CSS e PostgreSQL.<br>
+                            Também utilizo Git/GitHub, Figma, Postman e Railway nos meus projetos.<br><br>
+
+                            Participei do Bootcamp Riachuelo e do Programa PCD Tech Bradesco, onde aprimorei minhas bases em Java e pratiquei desenvolvimento em ambiente ágil.<br><br>
+
+                            Gosto de resolver problemas, aprender com pessoas mais experientes e evoluir um pouco a cada projeto.
                         </p>
                         <div class="btn-social">
                             <a href="https://www.linkedin.com/in/gabe12-dev"><button><i class="bi bi-linkedin"></i></button></a>
@@ -73,6 +94,104 @@
                 </div>
             </div>
         </section>
+        <!-- Seção de Ferramentas -->
+        <section class="ferramentas" id="ferramentas">
+    <div class="interface">
+        <h2 class="titulo">Minhas <span>Ferramentas</span>.</h2>
+
+        <div class="icons-grid">
+
+            <!-- Linguagens -->
+            <div class="icon-box">
+                <i class="devicon-java-plain colored"></i>
+                <p>Java</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="devicon-html5-plain colored"></i>
+                <p>HTML5</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS3</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="devicon-postgresql-plain colored"></i>
+                <p>SQL / PostgreSQL</p>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="icon-box">
+                <i class="devicon-spring-plain colored"></i>
+                <p>Spring Boot</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="devicon-thymeleaf-plain colored"></i>
+                <p>Thymeleaf</p>
+            </div>
+
+            <!-- IDEs -->
+            <div class="icon-box">
+                <i class="devicon-intellij-plain colored"></i>
+                <p>IntelliJ IDEA</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="devicon-vscode-plain colored"></i>
+                <p>VS Code</p>
+            </div>
+
+            <!-- Controle de versão -->
+            <div class="icon-box">
+                <i class="devicon-git-plain colored"></i>
+                <p>Git</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="devicon-github-original colored"></i>
+                <p>GitHub</p>
+            </div>
+
+            <!-- Ferramentas online -->
+            <div class="icon-box">
+                <i class="bi bi-cloud-fill yellow-icon"></i>
+                <p>Railway</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="bi bi-server yellow-icon"></i>
+                <p>pgAdmin</p>
+            </div>
+
+            <div class="icon-box">
+                <i class="bi bi-envelope-fill yellow-icon"></i>
+                <p>EmailJS</p>
+            </div>
+
+            <!-- Design -->
+            <div class="icon-box">
+                <i class="bi bi-brush yellow-icon"></i>
+                <p>Figma</p>
+            </div>
+
+            <!-- Biblioteca JS -->
+            <div class="icon-box">
+                <i class="bi bi-stars yellow-icon"></i>
+                <p>Particles.js</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
         <section class="projetos" id="projetos">
             <div class="interface">
                 <h2 class="titulo">Meus <span>Projetos</span>.</h2>
@@ -112,6 +231,50 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": { "enable": true, "value_area": 900 }
+          },
+          "color": {
+            "value": ["#FFD54F", "#FFC107", "#FFEB3B", "#FFE082"]
+          },
+          "shape": { "type": "circle" },
+          "opacity": { "value": 0.9, "random": true },
+          "size": { "value": 6, "random": true },
+          "line_linked": { "enable": false },
+          "move": {
+            "enable": true,
+            "speed": 1.1,
+            "random": true,
+            "out_mode": "bounce",
+            "bounce": true
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": { "enable": true, "mode": "repulse" },
+            "onclick": { "enable": true, "mode": "remove" },
+            "resize": true
+          },
+          "modes": {
+            "repulse": { "distance": 120, "duration": 0.6 },
+            "remove": { "particles_nb": 4 }
+          }
+        },
+        "retina_detect": true
+      });
+    });
+    </script>
+
+
+
     <!-- SCRIPT PARA ENVIO DO FORMULÁRIO DE CONTATO -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
@@ -140,5 +303,24 @@
         });
     });
     </script>
+
+    <script>
+const btnMenu = document.getElementById("btn-menu");
+const menuLateral = document.getElementById("menu-lateral");
+
+// Toggle menu lateral
+btnMenu.addEventListener("click", () => {
+    menuLateral.classList.toggle("ativo");
+});
+
+// Fecha menu ao clicar em um link
+document.querySelectorAll(".menu-lateral a").forEach(link => {
+    link.addEventListener("click", () => {
+        menuLateral.classList.remove("ativo");
+    });
+});
+</script>
+
+
 </body>
 </html>

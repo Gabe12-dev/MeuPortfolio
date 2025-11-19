@@ -42,7 +42,8 @@ h2.titulo span {
 ============================= */
 
 header {
-    background-color: #000;
+    background: #000;
+    opacity: 0.8;
     padding: 20px 0;
 }
 
@@ -55,12 +56,10 @@ header .interface {
 
 /* MENU DESKTOP */
 .menu-desktop ul {
-    /* abaixar um pouco do topo */
     margin-top: 100px;
     display: flex;
     gap: 40px;
     list-style: none;
-
 }
 
 .menu-desktop a {
@@ -68,9 +67,6 @@ header .interface {
     font-size: 40px;
     font-weight: 400;
     color: #bababa;
-    transition: .3s;
-}
-.menu-desktop a {
     transition: color .4s ease, transform .4s ease;
 }
 
@@ -79,7 +75,6 @@ header .interface {
     transform: scale(1.12);
     filter: drop-shadow(0 0 6px #ffffff60);
 }
-
 
 /* =============================
    SEÇÃO TOPO DO SITE
@@ -110,13 +105,13 @@ section.topo-do-site {
 }
 
 .img-topo-site img {
-    /* tirar do lado da borda da direita*/
     margin-right: 40px;
     margin-top: 70px;
     max-width: 300px;
     border-radius: 20px;
     border: 1px solid #ffd900;
     box-shadow: 0 0 8px #fff87d80;
+    background-color: #000;
 }
 
 .img-topo-site {
@@ -124,10 +119,10 @@ section.topo-do-site {
 }
 
 .topo-do-site .texto-topo-site {
-    /*deixar um pouco mais pra baixo*/
     margin-top: 40px;
     padding: 0 120px;
 }
+
 @keyframes flutuar {
     0% { transform: translateY(0); }
     100% { transform: translateY(20px); }
@@ -163,34 +158,46 @@ section.sobre {
     color: #ffd900;
 }
 
+/* Botões sociais */
 .btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    border: none;
-    background: #e5ff00;
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    border: 1px solid #ffd900a8;
+    background: #000;
+    color: #ffd900;
     font-size: 22px;
     margin-top: 20px;
     margin-right: 12px;
     cursor: pointer;
     transition: .3s;
-}
-.btn-social button:hover {
-    transform: scale(1.1);
+    box-shadow: 0 0 6px #ffd90040;
 }
 
+.btn-social button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #ffd90070;
+    background: #111;
+}
+
+/* Botão do currículo */
 .btn-contato button {
-    padding: 12px 40px;
-    font-size: 22px;
-    background: #e5ff00;
-    border-radius: 25px;
+    padding: 14px 45px;
+    font-size: 20px;
+    background: #000;
+    color: #ffd900;
+    border: 1px solid #ffd900a8;
+    border-radius: 14px;
     cursor: pointer;
-    border: none;
     margin-top: 25px;
     transition: .3s;
+    box-shadow: 0 0 6px #ffd90040;
 }
+
 .btn-contato button:hover {
     transform: scale(1.05);
+    background: #111;
+    box-shadow: 0 0 10px #ffd90070;
 }
 
 /* =============================
@@ -215,6 +222,8 @@ section.projetos {
     border: 2px solid #ffd900a8;
     text-align: center;
     transition: .4s;
+    background: #000;
+    color: #fff;
 }
 
 .projetos-box i {
@@ -224,6 +233,20 @@ section.projetos {
 
 .projetos-box h3 {
     margin: 20px 0;
+}
+
+.projetos-box a {
+    color: #ffd900;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.projetos-box a:visited {
+    color: #ffd900;
+}
+
+.projetos-box a:hover {
+    color: #fff;
 }
 
 .projetos-box:hover {
@@ -260,7 +283,7 @@ form textarea {
 }
 
 button[type="submit"] {
-    background: #e5ff00;
+    background: #ffd900;
     color: #000;
     padding: 14px;
     border: none;
@@ -270,6 +293,7 @@ button[type="submit"] {
     margin-top: 20px;
     transition: .3s;
 }
+
 button[type="submit"]:hover {
     transform: scale(1.05);
 }
@@ -282,6 +306,7 @@ footer {
     text-align: center;
     padding: 30px 0;
     background: #000;
+    opacity: 0.8;
     color: white;
 }
 
@@ -291,7 +316,156 @@ footer a {
 }
 
 /* =============================
-   RESPONSIVIDADE
+   ESTILO PARA PARTICLES.JS
+============================= */
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: #000;
+}
+
+/* =============================
+   SEÇÃO FERRAMENTAS
+============================= */
+
+section.ferramentas {
+    padding: 80px 0;
+}
+
+.icons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon-box {
+    width: 130px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-box i {
+    font-size: 60px;
+    margin-bottom: 12px;
+    color: #ffd900;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-box i.yellow-icon {
+    color: #ffd900;
+    font-weight: bold;
+}
+
+.icon-box i:hover {
+    transform: scale(1.2);
+    color: #fff87d;
+}
+
+.icon-box p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.icon-box i.devicon-github-original {
+    color: #ffd900;
+}
+.icon-box i.devicon-github-original:hover {
+    color: #fff87d;
+    transform: scale(1.2);
+}
+
+/* =============================
+   SOBRE MIM - AJUSTE DE TAMANHO
+============================= */
+section.sobre {
+    padding: 50px 0;
+}
+
+.texto-sobre-mim h2 {
+    font-size: 32px;
+}
+
+.texto-sobre-mim h3 {
+    font-size: 24px;
+}
+
+.texto-sobre-mim p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ================================
+   MENU HAMBÚRGUER / LATERAL
+================================= */
+.menu-hamburguer {
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 4%;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-hamburguer button {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.menu-lateral a {
+    margin: 20px 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #bababa;
+    transition: color 0.3s ease;
+}
+
+.menu-lateral a:hover {
+    color: #fff;
+}
+
+.menu-lateral.ativo {
+    right: 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .menu-hamburguer {
+        display: flex;
+    }
+    .menu-desktop {
+        display: none;
+    }
+}
+
+/* =============================
+   RESPONSIVIDADE AJUSTADA - MAIS ESPAÇOSO
 ============================= */
 
 /* ===== Tablets ===== */
@@ -299,46 +473,119 @@ footer a {
     .flex {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
     }
 
     header .interface {
         gap: 15px;
+        padding: 15px 3%;
     }
 
     .menu-desktop ul {
         flex-direction: column;
         gap: 20px;
     }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .projetos .flex {
+        gap: 30px;
+    }
+
+    .icons-grid {
+        gap: 30px;
+    }
 }
 
 /* ===== Celulares ===== */
 @media (max-width: 600px) {
-
     h2.titulo {
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
+        margin-bottom: 25px;
     }
 
     .topo-do-site h1 {
-        font-size: 28px;
+        font-size: 26px;
+        line-height: 36px;
     }
     .topo-do-site h1 span {
         font-size: 32px;
     }
 
+    .topo-do-site p {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+
     .img-topo-site img {
-        max-width: 230px;
+        max-width: 220px;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    section {
+        padding: 40px 5%;
     }
 
     .projetos-box {
         max-width: 100%;
+        padding: 25px;
     }
 
-    button[type="submit"] {
-        width: 100%;
+    form {
+        gap: 15px;
     }
 
+    form input,
+    form textarea {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    button[type="submit"],
     .btn-contato button {
         width: 100%;
+        font-size: 18px;
+        padding: 14px;
+    }
+
+    .btn-social button {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+        margin-top: 18px;
+    }
+
+    .icons-grid {
+        gap: 25px;
+    }
+
+    .icon-box i {
+        font-size: 65px;
+    }
+
+    .icon-box p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    section.sobre {
+        padding: 60px 5%;
+    }
+
+    .texto-sobre-mim h2 {
+        font-size: 28px;
+    }
+
+    .texto-sobre-mim h3 {
+        font-size: 22px;
+    }
+
+    .texto-sobre-mim p {
+        font-size: 16px;
+        line-height: 1.7;
     }
 }
