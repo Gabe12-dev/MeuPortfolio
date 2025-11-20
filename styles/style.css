@@ -874,19 +874,19 @@ footer a {
     }
 
 }
-/* ===== MOBILE PEQUENO ===== */
+/* ===== MOBILE PEQUENO (até 480px) ===== */
 @media (max-width: 480px) {
 
-    /* MENU HAMBÚRGUER */
+    /* MENU */
     .menu-desktop {
-        display: none;
+        display: none !important; /* esconde menu desktop */
     }
 
     .menu-hamburguer {
-        display: flex;
+        display: flex !important;
         justify-content: flex-end;
         align-items: center;
-        padding: 8px 4%;
+        padding: 6px 4%;
         background: #000;
         color: #ffd900;
         position: fixed;
@@ -896,8 +896,8 @@ footer a {
     }
 
     .menu-hamburguer button {
-        font-size: 40px;  /* maior */
-        padding: 10px;
+        font-size: 28px; /* tamanho compacto */
+        padding: 6px;
         background: none;
         border: none;
         cursor: pointer;
@@ -905,120 +905,136 @@ footer a {
         transition: transform 0.2s;
     }
 
+    /* Menu lateral */
     .menu-lateral {
-        width: 220px;
-        padding: 60px 15px 20px 15px;
+        width: 180px;
+        padding: 50px 10px 20px 10px;
     }
 
     .menu-lateral a {
-        font-size: 16px;
-        margin: 12px 0;
+        font-size: 14px;
+        margin: 10px 0;
+        text-align: center;
     }
 
     /* LAYOUT GERAL */
     section {
-        padding: 35px 4%;
+        padding: 30px 4%;
     }
 
     .flex {
         flex-direction: column;
         text-align: center;
-        gap: 25px;
+        gap: 20px;
     }
 
     /* TOPO DO SITE */
     .topo-do-site h1 {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .topo-do-site h1 span {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .topo-do-site p {
-        font-size: 14px;
-        margin-top: 10px;
-        max-width: 100%;
+        font-size: 13px;
+        margin-top: 6px;
     }
 
     .img-topo-site img {
-        max-width: 160px;
+        max-width: 120px;
     }
 
     /* TITULOS */
     h2.titulo {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 16px;
     }
 
     /* SOBRE MIM */
     .texto-sobre-mim h2 {
-        font-size: 22px;
-    }
-
-    .texto-sobre-mim h3 {
         font-size: 18px;
     }
 
+    .texto-sobre-mim h3 {
+        font-size: 16px;
+    }
+
     .texto-sobre-mim p {
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.4;
     }
 
     /* PROJETOS */
     section.projetos {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .projetos .flex {
-        flex-direction: column;
-        gap: 30px;
+        gap: 20px;
     }
 
     .projetos-box {
         max-width: 100%;
-        padding: 20px;
+        padding: 15px;
+    }
+
+    .projetos-box i {
+        font-size: 50px;
+    }
+
+    .projetos-box h3 {
+        font-size: 18px;
+        margin: 12px 0;
+    }
+
+    .projetos-box h2 {
+        font-size: 14px;
     }
 
     .ferramentas-projeto {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    /* FORMULÁRIO */
-    form {
         gap: 8px;
     }
 
+    .ferramenta i {
+        font-size: 16px;
+    }
+
+    .ferramenta span {
+        font-size: 10px;
+    }
+
+    /* FORMULÁRIO */
     form input,
     form textarea {
-        padding: 10px;
-        font-size: 14px;
+        padding: 8px;
+        font-size: 13px;
     }
 
     button[type="submit"],
     .btn-contato button {
-        font-size: 14px;
-        padding: 10px;
-        width: 100%;
+        font-size: 13px;
+        padding: 8px;
     }
 
     /* ÍCONES */
     .icons-grid {
-        gap: 16px;
+        gap: 12px;
     }
 
     .icon-box i {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .icon-box p {
-        font-size: 12px;
-        margin-top: 5px;
+        font-size: 11px;
+        margin-top: 4px;
     }
 }
+
 
 /* ==============================
    DESKTOP (SEM ALTERAR)
