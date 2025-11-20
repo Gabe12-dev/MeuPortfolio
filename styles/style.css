@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.interface .titulo{
+    text-align: center;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -16,7 +19,7 @@ body {
 
 /* Container principal */
 .interface {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -29,7 +32,7 @@ body {
 }
 
 h2.titulo {
-    font-size: 40px;
+    font-size: 44px;
     margin-bottom: 40px;
     color: #fff;
 }
@@ -58,8 +61,9 @@ header .interface {
 .menu-desktop ul {
     margin-top: 100px;
     display: flex;
-    gap: 40px;
+    gap: 80px;
     list-style: none;
+    justify-content: center;
 }
 
 .menu-desktop a {
@@ -79,35 +83,37 @@ header .interface {
 /* =============================
    SEÇÃO TOPO DO SITE
 ============================= */
-
 section.topo-do-site {
-    padding: 60px 0;
+    padding: 80px 0; /* mesmo espaçamento das outras seções */
+    text-align: center; /* centraliza o conteúdo */
 }
 
 .topo-do-site .flex {
-    justify-content: center;
-    gap: 80px;
+    flex-direction: column; /* coloca texto e imagem em coluna */
+    align-items: center;    /* centraliza horizontalmente */
+    gap: 30px;              /* espaçamento entre texto e imagem */
 }
 
 .topo-do-site h1 {
-    font-size: 45px;
-    line-height: 58px;
+    font-size: 38px;
+    line-height: 50px;
 }
 
 .topo-do-site h1 span {
     color: #ffd900;
-    font-size: 60px;
+    font-size: 48px;
 }
 
 .topo-do-site p {
-    font-size: 22px;
-    margin-top: 20px;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.6;
+    max-width: 600px; /* limita a largura do texto */
 }
 
 .img-topo-site img {
-    margin-right: 40px;
-    margin-top: 70px;
-    max-width: 300px;
+    margin-top: 40px;
+    max-width: 280px;
     border-radius: 20px;
     border: 1px solid #ffd900;
     box-shadow: 0 0 8px #fff87d80;
@@ -120,7 +126,7 @@ section.topo-do-site {
 
 .topo-do-site .texto-topo-site {
     margin-top: 40px;
-    padding: 0 120px;
+    padding: 0; /* remove padding extra e alinha com .interface */
 }
 
 @keyframes flutuar {
@@ -128,34 +134,70 @@ section.topo-do-site {
     100% { transform: translateY(20px); }
 }
 
+
 /* =============================
    SEÇÃO SOBRE
 ============================= */
-
 section.sobre {
-    padding: 80px 0;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
 }
-
+.sobre .interface {
+    background-color: #c5c5c5; 
+    opacity: 0.9;
+    padding: 40px;
+    border-radius: 30px;          
+    text-align: center;       
+}
 .sobre .flex {
     gap: 40px;
+     text-align: center;
+}
+.sobre .interface .titulo {
+    color : #000;
+}
+.sobre .interface .titulo .span{
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
+}
+.texto-sobre-mim {
+    color: #000;
 }
 
 .texto-sobre-mim h2 {
-    font-size: 36px;
+    font-size: 28px;
+    text-align: center;
+
 }
 
 .texto-sobre-mim h3 {
-    font-size: 28px;
+    font-size: 26px;
+     text-align: center;
 }
 
 .texto-sobre-mim p {
     margin-top: 25px;
     line-height: 1.8;
-    text-align: justify;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sobre .titulo {
+    text-align: center;
 }
 
 .texto-sobre-mim span {
     color: #ffd900;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
 }
 
 /* Botões sociais */
@@ -199,6 +241,44 @@ section.sobre {
     background: #111;
     box-shadow: 0 0 10px #ffd90070;
 }
+/* =============================
+   SEÇÃO FERRAMENTAS - ÍCONES AMARELOS PEQUENOS
+============================= */
+
+section.ferramentas {
+    padding: 80px 0;
+}
+
+.icons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon-box {
+    width: 130px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-box i {
+    font-size: 40px;
+    margin-bottom: 12px;
+    color: #ffd900 !important;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-box i:hover {
+    transform: scale(1.2);
+    color: #fff87d;
+}
+
+.icon-box p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #fff;
+}
 
 /* =============================
    SEÇÃO PROJETOS
@@ -206,6 +286,8 @@ section.sobre {
 
 section.projetos {
     padding: 80px 0;
+    padding-top: 300px;
+    padding-bottom: 500px;
 }
 
 .projetos .flex {
@@ -233,8 +315,11 @@ section.projetos {
 
 .projetos-box h3 {
     margin: 20px 0;
+    font-size: 24px;
 }
-
+.projetos-box h2 {
+    font-size: 18px;
+}
 .projetos-box a {
     color: #ffd900;
     text-decoration: none;
@@ -253,17 +338,107 @@ section.projetos {
     transform: scale(1.05);
     box-shadow: 0 0 8px #fff87d80;
 }
+/* BOTÕES DE SITE E GITHUB */
+.projetos-box {
+    position: relative;
+}
+
+.projeto-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.projeto-buttons a {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffd900;
+    background-color: #000;
+    border: 2px solid #ffd900;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.projeto-buttons a:hover {
+  background-color: #fff87d;
+    border-color: #fff87d;
+    color: #000; 
+
+}
+.projeto-buttons a i {
+    margin-right: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.projeto-buttons a:hover i {
+    color: #000;
+}
+
+/* ICONES DO PROJETO WIREFRAME*/
+
+.ferramentas-projeto {
+    display: flex;
+    justify-content: center;
+    gap: 12px; /* espaço entre cada grupo ícone+texto */
+    margin-top: 8px;
+}
+
+.ferramenta {
+    display: flex;
+    flex-direction: column; /* ícone em cima, texto embaixo */
+    align-items: center;
+    gap: 2px; /* espaço entre ícone e texto */
+}
+
+.ferramenta i {
+    font-size: 20px;
+    color: #ffd900 !important;
+}
+
+.ferramenta span {
+    font-size: 12px;  /* texto menor que o ícone */
+    color: #fff;      /* cor branca */
+}
+
 
 /* =============================
    SEÇÃO FORMULÁRIO (FALE COMIGO)
 ============================= */
-
 section.formulario {
-    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+section.formulario .interface .titulo {
+    color: #000;
+}
+section.formulario .interface .titulo .span {
+    color: #e9c600;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; 
+}
+.formulario .interface {
+    
+    padding: 80px 80px;
+
+    background-color: #c5c5c5;
+    opacity: 0.9;
+    border-radius: 30px;
+    text-align: center;
 }
 
 form {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -273,13 +448,13 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background: #cac7c723;
+    background: #00000023;
     border: none;
     outline: none;
     padding: 14px;
     border-radius: 10px;
-    color: white;
-    font-size: 16px;
+    color: #000000;
+    font-size: 18px;
 }
 
 button[type="submit"] {
@@ -326,78 +501,6 @@ footer a {
   background: #000;
 }
 
-/* =============================
-   SEÇÃO FERRAMENTAS
-============================= */
-
-section.ferramentas {
-    padding: 80px 0;
-}
-
-.icons-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-}
-
-.icon-box {
-    width: 130px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.icon-box i {
-    font-size: 60px;
-    margin-bottom: 12px;
-    color: #ffd900;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.icon-box i.yellow-icon {
-    color: #ffd900;
-    font-weight: bold;
-}
-
-.icon-box i:hover {
-    transform: scale(1.2);
-    color: #fff87d;
-}
-
-.icon-box p {
-    margin-top: 8px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.icon-box i.devicon-github-original {
-    color: #ffd900;
-}
-.icon-box i.devicon-github-original:hover {
-    color: #fff87d;
-    transform: scale(1.2);
-}
-
-/* =============================
-   SOBRE MIM - AJUSTE DE TAMANHO
-============================= */
-section.sobre {
-    padding: 50px 0;
-}
-
-.texto-sobre-mim h2 {
-    font-size: 32px;
-}
-
-.texto-sobre-mim h3 {
-    font-size: 24px;
-}
-
-.texto-sobre-mim p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 /* ================================
    MENU HAMBÚRGUER / LATERAL
 ================================= */
@@ -416,7 +519,7 @@ section.sobre {
 }
 
 .menu-hamburguer button {
-    font-size: 28px;
+    font-size: 40px;
     background: none;
     border: none;
     color: #fff;
@@ -442,7 +545,7 @@ section.sobre {
     margin: 20px 0;
     font-size: 20px;
     text-decoration: none;
-    color: #bababa;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
@@ -454,138 +557,325 @@ section.sobre {
     right: 0;
 }
 
-/* RESPONSIVIDADE */
+/* ==============================
+   RESPONSIVIDADE OTIMIZADA
+============================== */
+
+/* ===== TABLETS ===== */
 @media (max-width: 900px) {
-    .menu-hamburguer {
-        display: flex;
-    }
+
+    /* Remove menu desktop */
     .menu-desktop {
         display: none;
     }
-}
 
-/* =============================
-   RESPONSIVIDADE AJUSTADA - MAIS ESPAÇOSO
-============================= */
+    /* MENU HAMBÚRGUER */
+    .menu-hamburguer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 8px 4%;
+        background: #000;
+        color: #ffd900;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2000;
+    }
 
-/* ===== Tablets ===== */
-@media (max-width: 900px) {
+    .menu-hamburguer button {
+        font-size: 26px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #ffd900;
+        padding: 4px;
+        transition: transform 0.2s;
+    }
+
+    .menu-hamburguer button:hover {
+        transform: scale(1.15);
+    }
+
+    /* MENU LATERAL */
+    .menu-lateral {
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100%;
+        background: #000;
+        padding: 60px 15px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        transition: right 0.3s ease;
+        z-index: 2100;
+    }
+
+    .menu-lateral.ativo {
+        right: 0;
+    }
+
+    .menu-lateral a {
+        margin: 14px 0;
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        transition: 0.2s;
+    }
+
+    .menu-lateral a:hover {
+        color: #ffd900;
+    }
+
+    /* LAYOUT GERAL */
+    section {
+        padding: 45px 4%;
+    }
+
     .flex {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
+        gap: 22px;
     }
 
-    header .interface {
-        gap: 15px;
-        padding: 15px 3%;
-    }
-
-    .menu-desktop ul {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    section {
-        padding: 50px 5%;
-    }
-
-    .projetos .flex {
-        gap: 30px;
-    }
-
-    .icons-grid {
-        gap: 30px;
-    }
-}
-
-/* ===== Celulares ===== */
-@media (max-width: 600px) {
-    h2.titulo {
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-
+    /* TOPO DO SITE */
     .topo-do-site h1 {
         font-size: 26px;
-        line-height: 36px;
+        line-height: 32px;
     }
+
     .topo-do-site h1 span {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .topo-do-site p {
-        font-size: 18px;
-        margin-top: 25px;
+        font-size: 15px;
+        margin-top: 12px;
+        max-width: 500px;
     }
 
     .img-topo-site img {
-        max-width: 220px;
-        margin-top: 50px;
-        margin-right: 0;
+        max-width: 200px;
     }
 
-    section {
-        padding: 40px 5%;
+    .topo-do-site .flex {
+        gap: 22px;
     }
 
+    /* TITULOS */
+    h2.titulo {
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+
+    /* SOBRE MIM */
+    .texto-sobre-mim h2 {
+        font-size: 26px;
+    }
+
+    .texto-sobre-mim h3 {
+        font-size: 20px;
+    }
+
+    .texto-sobre-mim p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* PROJETOS */
     .projetos-box {
-        max-width: 100%;
-        padding: 25px;
+        max-width: 240px;
+        padding: 18px;
     }
 
+    /* FORMULARIO */
     form {
-        gap: 15px;
+        gap: 10px;
     }
 
     form input,
     form textarea {
-        padding: 16px;
-        font-size: 16px;
+        padding: 12px;
+        font-size: 15px;
     }
 
     button[type="submit"],
     .btn-contato button {
+        font-size: 15px;
+        padding: 12px;
         width: 100%;
-        font-size: 18px;
-        padding: 14px;
     }
 
-    .btn-social button {
-        width: 55px;
-        height: 55px;
-        font-size: 22px;
-        margin-top: 18px;
-    }
-
+    /* ÍCONES */
     .icons-grid {
-        gap: 25px;
+        gap: 20px;
     }
 
     .icon-box i {
-        font-size: 65px;
+        font-size: 42px;
     }
 
     .icon-box p {
-        font-size: 18px;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+}
+
+/* ===== CELULARES ===== */
+@media (max-width: 600px) {
+    /* MENU */
+.menu-hamburguer {
+    padding: 6px 4%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #000; /* importante pra não ficar transparente */
+    z-index: 999999 !important; /* acima de absolutamente tudo */
+}
+
+.menu-hamburguer button {
+    font-size: 35px;
+    color: #ffd900;
+    background: none;
+    border: none;
+}
+
+.menu-lateral {
+    width: 160px;
+    padding-top: 55px;
+    position: fixed;
+    top: 0;
+    right: -160px;
+    background: #000;
+    height: 100%;
+    z-index: 1000000 !important; /* ainda mais alto pra garantir */
+    transition: right 0.3s ease;
+}
+
+.menu-lateral a {
+    margin: 12px 0;
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+    /* LAYOUT GERAL */
+    section {
+        padding: 30px 4%;
+    }
+
+    .flex {
+        gap: 18px;
+    }
+
+    /* TOPO */
+    .topo-do-site h1 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .topo-do-site h1 span {
+        font-size: 25px;
+    }
+
+    .topo-do-site p {
+        font-size: 14px;
         margin-top: 10px;
     }
 
+    .img-topo-site img {
+        max-width: 250px;
+    }
+
+    /* TITULO */
+    h2.titulo {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    /* SOBRE */
     section.sobre {
-        padding: 60px 5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 60px;
     }
 
     .texto-sobre-mim h2 {
-        font-size: 28px;
-    }
-
-    .texto-sobre-mim h3 {
         font-size: 22px;
     }
 
-    .texto-sobre-mim p {
-        font-size: 16px;
-        line-height: 1.7;
+    .texto-sobre-mim h3 {
+        font-size: 18px;
     }
+
+    .texto-sobre-mim p {
+        font-size: 14px;
+    }
+
+    /* PROJETOS */
+    .projetos-box {
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    /* FORMULARIO */
+    form input,
+    form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button[type="submit"],
+    .btn-contato button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* ÍCONES */
+    .icons-grid {
+        gap: 16px;
+    }
+
+    .icon-box i {
+        font-size: 38px;
+    }
+
+    .icon-box p {
+        font-size: 13px;
+    }
+
+}
+
+/* ==============================
+   DESKTOP (SEM ALTERAR)
+============================== */
+
+section.topo-do-site,
+section.sobre,
+section.projetos,
+section.formulario,
+section.ferramentas {
+    padding: 120px 0 120px 0;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/* GARANTIR QUE O MENU HAMBÚRGUER SEMPRE FICA POR CIMA */
+.menu-hamburguer {
+    position: fixed;
+    z-index: 999999 !important;
+}
+
+.menu-lateral {
+    position: fixed;
+    z-index: 1000000 !important;
+}
+
+/* GARANTIR QUE O HEADER NÃO COBRE O MENU */
+header {
+    position: relative;
+    z-index: 5;
 }

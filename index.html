@@ -21,30 +21,29 @@
 
     <div id="particles-js"></div>
 
-        <header>
-            <div class="menu-hamburguer">
-                <button id="btn-menu">&#9776;</button>
-            </div>
-
-
-            <nav class="menu-lateral" id="menu-lateral">
-                <a href="#topo">Início</a>
-                <a href="#sobre">Sobre mim</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#formulario">Fale comigo</a>
-            </nav>
-
+    <header>
         <div class="interface">
             <nav class="menu-desktop">
                 <ul>
-                   <li><a href="#topo">Início</a></li>
-                   <li><a href="#sobre">Sobre mim</a></li>
-                   <li><a href="#projetos">Projetos</a></li>    
+                    <li><a href="#topo">Início</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>    
                     <li><a href="#formulario">Fale comigo</a></li>
                 </ul>
             </nav>
         </div>
 
+        <div class="menu-hamburguer">
+            <button id="btn-menu">&#9776;</button>
+        </div>
+
+
+        <nav class="menu-lateral" id="menu-lateral">
+            <a href="#topo">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formulario">Fale comigo</a>
+        </nav>
     </header>
 
     <main>
@@ -53,7 +52,6 @@
                 <div class="flex">
                     <div class="texto-topo-site">
                         <h1>💻 🧠 Aprendendo hoje o que vai mudar o <span>amanhã</span>.</h1>
-                        <p>Estudante de Análise e Desenvolvimento de Sistemas. Minha principal competência é o aprendizado rápido e a aplicação da lógica para resolução de problemas. Pronto para evoluir e consolidar meu nome no mercado.</p>
                     </div>
                     <div class="img-topo-site">
                         <img src="images/IMG_20251103_105827.png" alt="Imagem de um desenvolvedor">
@@ -63,31 +61,32 @@
         </section>
         <section class="sobre" id="sobre">
             <div class="interface">
-                <h2 class="titulo">Sobre <span>mim</span>.</h2>
+                <h2 class="titulo">Sobre <span class="span">mim</span>.</h2>
                 <div class="flex">
                     <div class="texto-sobre-mim">
                         <h2>Muito prazer! Meu nome é Gabriel Batista</h2>
-                        <h3>mas pode me chamar de <span>Gabe</span>.</h3>
-                        <p><br>
-                            Sou estudante de Análise e Desenvolvimento de Sistemas.<br>
-                            Tenho interesse em entender como as coisas funcionam no código e estou sempre buscando aprender mais.<br><br>
+                        <h3>mas pode me chamar de <span class="span">Gabe</span>.</h3>
+                        <p>
+                            Sou estudante de Análise e Desenvolvimento de Sistemas, com foco no desenvolvimento de soluções backend. Tenho dedicado meus estudos ao aperfeiçoamento em Java, Spring Boot, APIs REST e bancos de dados relacionais, buscando sempre compreender os fundamentos que sustentam aplicações robustas e escaláveis.<br><br>
 
-                            Trabalho principalmente com Java, Spring Boot, JavaScript, HTML, CSS e PostgreSQL.<br>
-                            Também utilizo Git/GitHub, Figma, Postman e Railway nos meus projetos.<br><br>
+                            Possuo uma abordagem estruturada para resolução de problemas, valorizando organização, clareza e consistência no desenvolvimento de software. Prezo por boas práticas de engenharia, versionamento adequado e escrita de código limpo, além de manter disciplina no aprendizado contínuo, essencial para acompanhar a evolução constante da área.<br><br>
 
-                            Participei do Bootcamp Riachuelo e do Programa PCD Tech Bradesco, onde aprimorei minhas bases em Java e pratiquei desenvolvimento em ambiente ágil.<br><br>
+                            Sou comprometido com responsabilidade, ética profissional e colaboração em equipe, entendendo que resultados de qualidade surgem do alinhamento entre técnica e comunicação.<br><br>
 
-                            Gosto de resolver problemas, aprender com pessoas mais experientes e evoluir um pouco a cada projeto.
+                            Meu objetivo é iniciar minha trajetória profissional contribuindo para projetos que demandem seriedade, eficiência e atenção aos detalhes, enquanto continuo expandindo minhas competências técnicas e práticas.
                         </p>
+
                         <div class="btn-social">
-                            <a href="https://www.linkedin.com/in/gabe12-dev"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.linkedin.com/in/gabe12-dev"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
                             <a href="https://github.com/Gabe12-dev"><button><i class="bi bi-github"></i></button></a>
-                            <a href="https://www.instagram.com/gabexx_12"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.instagram.com/gabexx_12"><button><i
+                                        class="bi bi-instagram"></i></button></a>
                         </div>
                         <div class="btn-contato">
-                             <a href="assets/curriculo-gabriel.pdf" download>
-                                  <button>Meu Currículo</button>
-                             </a>
+                            <a href="assets/curriculo-gabriel.pdf" download>
+                                <button>Meu Currículo</button>
+                            </a>
                         </div>
 
                     </div>
@@ -96,231 +95,252 @@
         </section>
         <!-- Seção de Ferramentas -->
         <section class="ferramentas" id="ferramentas">
-    <div class="interface">
-        <h2 class="titulo">Minhas <span>Ferramentas</span>.</h2>
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>Ferramentas</span>.</h2>
+                <div class="icons-grid">
 
-        <div class="icons-grid">
+                    <!-- Linguagens -->
+                    <div class="icon-box">
+                        <i class="devicon-java-plain colored"></i>
+                        <p>Java</p>
+                    </div>
 
-            <!-- Linguagens -->
-            <div class="icon-box">
-                <i class="devicon-java-plain colored"></i>
-                <p>Java</p>
+                    <div class="icon-box">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="devicon-html5-plain colored"></i>
+                        <p>HTML5</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="devicon-css3-plain colored"></i>
+                        <p>CSS3</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <p>SQL / PostgreSQL</p>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="icon-box">
+                        <i class="devicon-spring-plain colored"></i>
+                        <p>Spring Boot</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="devicon-thymeleaf-plain colored"></i>
+                        <p>Thymeleaf</p>
+                    </div>
+
+                    <!-- IDEs -->
+                    <div class="icon-box">
+                        <i class="devicon-intellij-plain colored"></i>
+                        <p>IntelliJ IDEA</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="devicon-vscode-plain colored"></i>
+                        <p>VS Code</p>
+                    </div>
+
+                    <!-- Controle de versão -->
+                    <div class="icon-box">
+                        <i class="devicon-git-plain colored"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="icon-box">
+                        <i class="devicon-github-original colored"></i>
+                        <p>GitHub</p>
+                    </div>
+                    <!-- Ferramentas online -->
+                    <div class="icon-box">
+                        <i class="bi bi-cloud-fill yellow-icon"></i>
+                        <p>Railway</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="bi bi-server yellow-icon"></i>
+                        <p>pgAdmin</p>
+                    </div>
+
+                    <div class="icon-box">
+                        <i class="bi bi-envelope-fill yellow-icon"></i>
+                        <p>EmailJS</p>
+                    </div>
+
+                    <!-- Design -->
+                    <div class="icon-box">
+                        <i class="bi bi-brush yellow-icon"></i>
+                        <p>Figma</p>
+                    </div>
+                    <!-- Biblioteca JS -->
+                    <div class="icon-box">
+                        <i class="devicon-react-original colored"></i>
+                        <p>React.js</p>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="icon-box">
-                <i class="devicon-javascript-plain colored"></i>
-                <p>JavaScript</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="devicon-html5-plain colored"></i>
-                <p>HTML5</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="devicon-css3-plain colored"></i>
-                <p>CSS3</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="devicon-postgresql-plain colored"></i>
-                <p>SQL / PostgreSQL</p>
-            </div>
-
-            <!-- Frameworks -->
-            <div class="icon-box">
-                <i class="devicon-spring-plain colored"></i>
-                <p>Spring Boot</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="devicon-thymeleaf-plain colored"></i>
-                <p>Thymeleaf</p>
-            </div>
-
-            <!-- IDEs -->
-            <div class="icon-box">
-                <i class="devicon-intellij-plain colored"></i>
-                <p>IntelliJ IDEA</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="devicon-vscode-plain colored"></i>
-                <p>VS Code</p>
-            </div>
-
-            <!-- Controle de versão -->
-            <div class="icon-box">
-                <i class="devicon-git-plain colored"></i>
-                <p>Git</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="devicon-github-original colored"></i>
-                <p>GitHub</p>
-            </div>
-
-            <!-- Ferramentas online -->
-            <div class="icon-box">
-                <i class="bi bi-cloud-fill yellow-icon"></i>
-                <p>Railway</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="bi bi-server yellow-icon"></i>
-                <p>pgAdmin</p>
-            </div>
-
-            <div class="icon-box">
-                <i class="bi bi-envelope-fill yellow-icon"></i>
-                <p>EmailJS</p>
-            </div>
-
-            <!-- Design -->
-            <div class="icon-box">
-                <i class="bi bi-brush yellow-icon"></i>
-                <p>Figma</p>
-            </div>
-
-            <!-- Biblioteca JS -->
-            <div class="icon-box">
-                <i class="bi bi-stars yellow-icon"></i>
-                <p>Particles.js</p>
-            </div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="projetos" id="projetos">
             <div class="interface">
                 <h2 class="titulo">Meus <span>Projetos</span>.</h2>
                 <div class="flex">
-                   <a href="https://wireframe-pessoa-production.up.railway.app/pessoas" target="_blank">
-                        <div class="projetos-box">
-                            <i class="bi bi-person-vcard"></i>
-                             <h3>WireFrame Pessoa</h3>
-                            <p>
-                                Projeto de um WireFrame para gerenciamento de pessoas utilizando:<br>
-                                Java, Spring Boot, Thymeleaf, HTML e CSS.
-                            </p>
-                         </div>
-                    </a>
+                    <div class="projetos-box">
+                        <!-- Botões no canto superior direito -->
+                        <div class="projeto-buttons">
+                            <a href="https://github.com/gabe12-dev/wireframe-pessoa" target="_blank" class="btn-github">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://wireframe-pessoa-production.up.railway.app/pessoas" target="_blank" class="btn-site">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
 
+
+                        <i class="bi bi-person-vcard"></i>
+                            <h3>WireFrame Pessoa</h3>
+                            <h2>Projeto de um WireFrame para gerenciamento de pessoas</h2>
+                            <p>Ferramentas utilizadas:</p>
+                            <div class="ferramentas-projeto">
+                                <div class="ferramenta">
+                                    <i class="devicon-java-plain colored"></i>
+                                    <span>Java</span>
+                                </div>
+                                <div class="ferramenta">
+                                    <i class="devicon-spring-plain colored"></i>
+                                    <span>SpringBoot</span>
+                                </div>
+                                <div class="ferramenta">
+                                <i class="devicon-html5-plain colored"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="ferramenta">
+                                    <i class="devicon-css3-plain colored"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="ferramenta">
+                                    <i class="devicon-postgresql-plain colored"></i>
+                                    <span>PostgreSQL</span>
+                                </div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </section>
-       <section class="formulario" id="formulario">
-    <div class="interface">
-        <h2 class="titulo">FALE <span>COMIGO</span>.</h2>
 
-        <form id="formContato">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</section>
-
-
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span class="span">COMIGO</span>.</h2>
+                <form id="formContato">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="interface">
-            <p>© 2025 Gabriel Batista. Todos os direitos reservados.<br><hr><i class="bi bi-envelope-fill"></i> <a href="mailto:baristagabriel9@gmail.com">baristagabriel9@gmail.com</a></p>
+            <p>© 2025 Gabriel Batista. Todos os direitos reservados.<br>
+                <hr><i class="bi bi-envelope-fill"></i> <a
+                    href="mailto:baristagabriel9@gmail.com">baristagabriel9@gmail.com</a>
+            </p>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      particlesJS("particles-js", {
-        "particles": {
-          "number": {
-            "value": 80,
-            "density": { "enable": true, "value_area": 900 }
-          },
-          "color": {
-            "value": ["#FFD54F", "#FFC107", "#FFEB3B", "#FFE082"]
-          },
-          "shape": { "type": "circle" },
-          "opacity": { "value": 0.9, "random": true },
-          "size": { "value": 6, "random": true },
-          "line_linked": { "enable": false },
-          "move": {
-            "enable": true,
-            "speed": 1.1,
-            "random": true,
-            "out_mode": "bounce",
-            "bounce": true
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": { "enable": true, "mode": "repulse" },
-            "onclick": { "enable": true, "mode": "remove" },
-            "resize": true
-          },
-          "modes": {
-            "repulse": { "distance": 120, "duration": 0.6 },
-            "remove": { "particles_nb": 4 }
-          }
-        },
-        "retina_detect": true
-      });
-    });
+        document.addEventListener("DOMContentLoaded", function () {
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": { "enable": true, "value_area": 900 }
+                    },
+                    "color": {
+                        "value": ["#FFD54F", "#FFC107", "#FFEB3B", "#FFE082"]
+                    },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.9, "random": true },
+                    "size": { "value": 6, "random": true },
+                    "line_linked": { "enable": false },
+                    "move": {
+                        "enable": true,
+                        "speed": 1.1,
+                        "random": true,
+                        "out_mode": "bounce",
+                        "bounce": true
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": { "enable": true, "mode": "repulse" },
+                        "onclick": { "enable": true, "mode": "remove" },
+                        "resize": true
+                    },
+                    "modes": {
+                        "repulse": { "distance": 120, "duration": 0.6 },
+                        "remove": { "particles_nb": 4 }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
     </script>
-
-
-
     <!-- SCRIPT PARA ENVIO DO FORMULÁRIO DE CONTATO -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
-    // Inicializa o EmailJS
-    emailjs.init("MtlaoKaq2wlOh-xNo");
+        // Inicializa o EmailJS
+        emailjs.init("MtlaoKaq2wlOh-xNo");
 
-    document.getElementById("formContato").addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita reload
+        document.getElementById("formContato").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita reload
 
-        var params = {
-            nome: document.querySelector("input[name='nome']").value,
-            email: document.querySelector("input[name='email']").value,
-            mensagem: document.querySelector("textarea[name='mensagem']").value
-        };
+            var params = {
+                nome: document.querySelector("input[name='nome']").value,
+                email: document.querySelector("input[name='email']").value,
+                mensagem: document.querySelector("textarea[name='mensagem']").value
+            };
 
-        const serviceID = "service_zz9lou7";
-        const templateID = "template_9pjgt5n";
+            const serviceID = "service_zz9lou7";
+            const templateID = "template_9pjgt5n";
 
-        emailjs.send(serviceID, templateID, params)
-        .then(() => {
-            alert("Mensagem enviada com sucesso! ✨");
-        })
-        .catch((err) => {
-            console.log(err);
-            alert("Erro ao enviar mensagem.");
+            emailjs.send(serviceID, templateID, params)
+                .then(() => {
+                    alert("Mensagem enviada com sucesso! ✨");
+                })
+                .catch((err) => {
+                    console.log(err);
+                    alert("Erro ao enviar mensagem.");
+                });
         });
-    });
     </script>
 
     <script>
-const btnMenu = document.getElementById("btn-menu");
-const menuLateral = document.getElementById("menu-lateral");
+        const btnMenu = document.getElementById("btn-menu");
+        const menuLateral = document.getElementById("menu-lateral");
 
-// Toggle menu lateral
-btnMenu.addEventListener("click", () => {
-    menuLateral.classList.toggle("ativo");
-});
+        // Toggle menu lateral
+        btnMenu.addEventListener("click", () => {
+            menuLateral.classList.toggle("ativo");
+        });
 
-// Fecha menu ao clicar em um link
-document.querySelectorAll(".menu-lateral a").forEach(link => {
-    link.addEventListener("click", () => {
-        menuLateral.classList.remove("ativo");
-    });
-});
-</script>
-
+        // Fecha menu ao clicar em um link
+        document.querySelectorAll(".menu-lateral a").forEach(link => {
+            link.addEventListener("click", () => {
+                menuLateral.classList.remove("ativo");
+            });
+        });
+    </script>
 
 </body>
 </html>
