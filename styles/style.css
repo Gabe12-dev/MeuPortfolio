@@ -874,6 +874,151 @@ footer a {
     }
 
 }
+/* ===== MOBILE PEQUENO ===== */
+@media (max-width: 480px) {
+
+    /* MENU HAMBÚRGUER */
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 8px 4%;
+        background: #000;
+        color: #ffd900;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2000;
+    }
+
+    .menu-hamburguer button {
+        font-size: 40px;  /* maior */
+        padding: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #ffd900;
+        transition: transform 0.2s;
+    }
+
+    .menu-lateral {
+        width: 220px;
+        padding: 60px 15px 20px 15px;
+    }
+
+    .menu-lateral a {
+        font-size: 16px;
+        margin: 12px 0;
+    }
+
+    /* LAYOUT GERAL */
+    section {
+        padding: 35px 4%;
+    }
+
+    .flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .topo-do-site h1 span {
+        font-size: 26px;
+    }
+
+    .topo-do-site p {
+        font-size: 14px;
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .img-topo-site img {
+        max-width: 160px;
+    }
+
+    /* TITULOS */
+    h2.titulo {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* SOBRE MIM */
+    .texto-sobre-mim h2 {
+        font-size: 22px;
+    }
+
+    .texto-sobre-mim h3 {
+        font-size: 18px;
+    }
+
+    .texto-sobre-mim p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* PROJETOS */
+    section.projetos {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .projetos .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .projetos-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .ferramentas-projeto {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* FORMULÁRIO */
+    form {
+        gap: 8px;
+    }
+
+    form input,
+    form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button[type="submit"],
+    .btn-contato button {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* ÍCONES */
+    .icons-grid {
+        gap: 16px;
+    }
+
+    .icon-box i {
+        font-size: 36px;
+    }
+
+    .icon-box p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
 
 /* ==============================
    DESKTOP (SEM ALTERAR)
