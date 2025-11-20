@@ -946,8 +946,10 @@ footer a {
     .img-topo-site img {
         max-width: 120px;
     }
+
+    /* espaço abaixo do topo */
     .topo-do-site{
-        padding-bottom: 80px;
+        padding-bottom: 50px; /* antes estava enorme */
     }
 
     /* TITULOS */
@@ -969,14 +971,16 @@ footer a {
         font-size: 12px;
         line-height: 1.4;
     }
+
     .texto-sobre-mim {
-        padding-top: 90px;    /* distancia do topo (imagem) */
-        padding-bottom: 60px; /* distancia da próxima seção (ferramentas) */
+        padding-top: 50px;    /* antes 90px */
+        padding-bottom: 40px; /* antes 60px */
     }
+
     /* PROJETOS */
     section.projetos {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 60px; /* estava 80px */
+        padding-bottom: 60px;
     }
 
     .projetos .flex {
@@ -1039,8 +1043,10 @@ footer a {
         font-size: 11px;
         margin-top: 4px;
     }
+
+    /* FERRAMENTAS */
     section.ferramentas {
-        padding-top: 80px;    /* distancia do Sobre mim */
+        padding-top: 50px;  /* antes 80px */
         padding-bottom: 40px;
     }
 }
