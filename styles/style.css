@@ -773,7 +773,7 @@ footer a {
 
     /* LAYOUT GERAL */
     section {
-        padding: 30px 4%;
+        padding: 40px 7%;
     }
 
     .flex {
@@ -785,7 +785,7 @@ footer a {
         font-size: 22px;
         line-height: 28px;
     }
-
+    
     .topo-do-site h1 span {
         font-size: 25px;
     }
@@ -946,6 +946,9 @@ footer a {
     .img-topo-site img {
         max-width: 120px;
     }
+    .topo-do-site{
+        padding-bottom: 40px;
+    }
 
     /* TITULOS */
     h2.titulo {
@@ -966,7 +969,10 @@ footer a {
         font-size: 12px;
         line-height: 1.4;
     }
-
+    .texto-sobre-mim {
+        padding-top: 30px;    /* distancia do topo (imagem) */
+        padding-bottom: 40px; /* distancia da próxima seção (ferramentas) */
+    }
     /* PROJETOS */
     section.projetos {
         padding-top: 80px;
@@ -1032,6 +1038,10 @@ footer a {
     .icon-box p {
         font-size: 11px;
         margin-top: 4px;
+    }
+    section.ferramentas {
+        padding-top: 40px;    /* distancia do Sobre mim */
+        padding-bottom: 40px;
     }
 }
 
