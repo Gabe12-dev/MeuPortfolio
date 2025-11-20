@@ -84,14 +84,14 @@ header .interface {
    SEÇÃO TOPO DO SITE
 ============================= */
 section.topo-do-site {
-    padding: 80px 0; /* mesmo espaçamento das outras seções */
-    text-align: center; /* centraliza o conteúdo */
+    padding: 80px 0;
+    text-align: center;
 }
 
 .topo-do-site .flex {
-    flex-direction: column; /* coloca texto e imagem em coluna */
-    align-items: center;    /* centraliza horizontalmente */
-    gap: 30px;              /* espaçamento entre texto e imagem */
+    flex-direction: column;
+    align-items: center; 
+    gap: 30px;
 }
 
 .topo-do-site h1 {
@@ -108,7 +108,7 @@ section.topo-do-site {
     font-size: 18px;
     margin-top: 15px;
     line-height: 1.6;
-    max-width: 600px; /* limita a largura do texto */
+    max-width: 600px;
 }
 
 .img-topo-site img {
@@ -126,7 +126,7 @@ section.topo-do-site {
 
 .topo-do-site .texto-topo-site {
     margin-top: 40px;
-    padding: 0; /* remove padding extra e alinha com .interface */
+    padding: 0;
 }
 
 @keyframes flutuar {
@@ -382,15 +382,15 @@ section.projetos {
 .ferramentas-projeto {
     display: flex;
     justify-content: center;
-    gap: 12px; /* espaço entre cada grupo ícone+texto */
+    gap: 12px;
     margin-top: 8px;
 }
 
 .ferramenta {
     display: flex;
-    flex-direction: column; /* ícone em cima, texto embaixo */
+    flex-direction: column;
     align-items: center;
-    gap: 2px; /* espaço entre ícone e texto */
+    gap: 2px;
 }
 
 .ferramenta i {
@@ -399,8 +399,8 @@ section.projetos {
 }
 
 .ferramenta span {
-    font-size: 12px;  /* texto menor que o ícone */
-    color: #fff;      /* cor branca */
+    font-size: 12px;
+    color: #fff; 
 }
 
 
@@ -564,7 +564,6 @@ footer a {
 /* ===== TABLETS ===== */
 @media (max-width: 900px) {
 
-    /* Remove menu desktop */
     .menu-desktop {
         display: none;
     }
@@ -731,8 +730,8 @@ footer a {
     top: 0;
     right: 0;
     width: 100%;
-    background: #000; /* importante pra não ficar transparente */
-    z-index: 999999 !important; /* acima de absolutamente tudo */
+    background: #000; 
+    z-index: 999999 !important;
 }
 
 .menu-hamburguer button {
@@ -750,7 +749,7 @@ footer a {
     right: -160px;
     background: #000;
     height: 100%;
-    z-index: 1000000 !important; /* ainda mais alto pra garantir */
+    z-index: 1000000 !important;
     transition: right 0.3s ease;
 }
 
