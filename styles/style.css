@@ -556,6 +556,36 @@ footer a {
 .menu-lateral.ativo {
     right: 0;
 }
+/* ==============================
+   DESKTOP (SEM ALTERAR)
+============================== */
+
+section.topo-do-site,
+section.sobre,
+section.projetos,
+section.formulario,
+section.ferramentas {
+    padding: 120px 0 120px 0;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/* GARANTIR QUE O MENU HAMBÚRGUER SEMPRE FICA POR CIMA */
+.menu-hamburguer {
+    position: fixed;
+    z-index: 999999 !important;
+}
+
+.menu-lateral {
+    position: fixed;
+    z-index: 1000000 !important;
+}
+
+/* GARANTIR QUE O HEADER NÃO COBRE O MENU */
+header {
+    position: relative;
+    z-index: 5;
+}
 
 /* ==============================
    RESPONSIVIDADE OTIMIZADA
@@ -1049,36 +1079,4 @@ footer a {
         padding-top: 50px;  /* antes 80px */
         padding-bottom: 40px;
     }
-}
-
-
-/* ==============================
-   DESKTOP (SEM ALTERAR)
-============================== */
-
-section.topo-do-site,
-section.sobre,
-section.projetos,
-section.formulario,
-section.ferramentas {
-    padding: 120px 0 120px 0;
-    padding-left: 7%;
-    padding-right: 7%;
-}
-
-/* GARANTIR QUE O MENU HAMBÚRGUER SEMPRE FICA POR CIMA */
-.menu-hamburguer {
-    position: fixed;
-    z-index: 999999 !important;
-}
-
-.menu-lateral {
-    position: fixed;
-    z-index: 1000000 !important;
-}
-
-/* GARANTIR QUE O HEADER NÃO COBRE O MENU */
-header {
-    position: relative;
-    z-index: 5;
 }
